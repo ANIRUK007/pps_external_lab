@@ -1,14 +1,27 @@
 #include <stdio.h>
-void main()
+int main()
 {
-    int num;
+    int num , i, prime=1;
     printf("Enter any number:");
     scanf("%d",&num);
-    if(num%2==0)
+    if(num <=1 )
     {
-        printf("Its an even number!!");
+        prime=0;
     }
     else{
-        printf("Its an odd number!!!!");
+        for(i=2;i*i <=num;i++)
+        {
+            if(num%i == 0)
+            {
+                prime=0;
+                break;
+            }
+        }
     }
-    }
+    if(prime)
+    printf("Prime Number");
+    else
+    printf("Not a prime");
+
+    return 0;
+}
