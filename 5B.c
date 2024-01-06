@@ -6,7 +6,7 @@ void main()
     scanf("%d",&row);
     printf("Enter coloumns of matrixes:");
     scanf("%d",&col);
-    printf("Enter the elements Of first matrix");
+    printf("Enter the elements Of first matrix:\n");
     for(int i=0;i<row;i++)
     {
         for(int j=0;j<col;j++)
@@ -14,7 +14,7 @@ void main()
             scanf("%d",&a[i][j]);
         }
     }
-    printf("Enter the elements Of second matrix");
+    printf("Enter the elements Of second matrix:\n");
     for(int i=0;i<row;i++)
     {
         for(int j=0;j<col;j++)
@@ -22,7 +22,7 @@ void main()
             scanf("%d",&b[i][j]);
         }
     }
-    printf("Sum of this two matrix's is");
+    printf("Sum of this two matrix's is\n");
     for(int i=0;i<row;i++)
     {
         for(int j=0;j<col;j++)
